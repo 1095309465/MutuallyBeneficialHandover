@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="23dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/img_house" />
+
+    <LinearLayout
+        android:id="@+id/layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/bind_layout_shape"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="区域名:"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tv_zoneName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="房间名:"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tv_roomName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A301"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="区域编码:"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tv_zoneValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="房间编码:"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tv_roomValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IEM:"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tv_iem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12345678909876"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#DBDBDB" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/btn_bind"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_bind_shape"
+                android:gravity="center"
+                android:text="绑定"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/btn_unbind"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/btn_bind"
+                android:background="@drawable/btn_bind_shape"
+                android:gravity="center"
+                android:text="解绑"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

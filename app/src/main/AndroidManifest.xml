@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jhzy.nursinghandover">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- 开机跳转权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 登陆 -->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 锁屏进入的下级界面 -->
+        <activity
+            android:name=".ui.NextActivity"
+            android:screenOrientation="landscape" />
+        <!-- 锁屏界面 -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden"/>
+        <!-- 交接班界面 -->
+        <activity
+            android:name=".ui.ShiftsActivity"
+            android:screenOrientation="landscape" />
+        <!-- 绑定床位界面 -->
+        <activity
+            android:name=".ui.BindBedActivity"
+            android:screenOrientation="landscape" />
+        <!-- 绑定界面 -->
+        <activity
+            android:name=".ui.BindActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".ui.RoomActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.ElderActivity"
+            android:screenOrientation="landscape" />
+
+        <service
+            android:name="com.xishua.integration.ReaderService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.xishua.integration.ReaderService" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".utils.BootStartReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".broadcastReceiver.ReaderStatusReceiver"
+            android:enabled="true">
+
+            <!-- 静态注册广播 -->
+            <!-- intent过滤器,指定可以匹配哪些intent, 一般需要定义action 可以是自定义的也可是系统的 -->
+            <intent-filter>
+                <action android:name="com.xishua.integration.action.NFC_READER_OPEN" />
+                <action android:name="com.xishua.integration.action.NFC_READER_CLOSED" />
+                <action android:name="com.xishua.integration.action.NFC_READER_GET_POWER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".broadcastReceiver.ServiceStatusReceiver"
+            android:enabled="true">
+
+            <!-- 静态注册广播 -->
+            <!-- intent过滤器,指定可以匹配哪些intent, 一般需要定义action 可以是自定义的也可是系统的 -->
+            <intent-filter>
+
+                <!-- action -->
+                <action android:name="com.xishua.integration.action.SERVICE_STARTED" />
+                <action android:name="com.xishua.integration.action.SERVICE_STOPPED" />
+            </intent-filter>
+        </receiver>
+        <!--<receiver-->
+            <!--android:name=".broadcastReceiver.TagStatusReceiver"-->
+            <!--android:enabled="true">-->
+
+            <!--&lt;!&ndash; 静态注册广播 &ndash;&gt;-->
+            <!--&lt;!&ndash; intent过滤器,指定可以匹配哪些intent, 一般需要定义action 可以是自定义的也可是系统的 &ndash;&gt;-->
+            <!--<intent-filter>-->
+
+                <!--&lt;!&ndash; action &ndash;&gt;-->
+                <!--<action android:name="com.xishua.integration.action.NFC_TAG_DISCOVERED" />-->
+                <!--<action android:name="com.xishua.integration.action.NFC_TAG_LEFT_FIELD" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <activity android:name=".ui.BedNextActivity" android:screenOrientation="landscape"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#51b0fa</color>
+    <color name="color_activity_bg">#F9F9F9</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="thunder">#4C4C4C</color>
+    <color name="thunder_1">#969696</color>
+    <color name="color_gray">#DBDBDB</color>
+    <!--next界面分割线颜色51b0fa-->
+    <color name="picton_blue">#56B1F7</color>
+    <color name="progress_blue">#51b0fa</color>
+    <color name="colorlback">#A0000000</color>
+
+    //状态栏的颜色
+    <color name="color_statu_bar">#F9F9F9</color>
+
+
+    <color name="color_text">#333333</color>
+    <color name="apple">#75CC3E</color>
+    <color name="color_pink">#FF93BC</color>
+    <!--床头-->
+    <color name="color_subtitle">#787878</color>
+    <color name="color_subtitle_selector">#FF9900</color>
+    <color name="color_submit_can">#FDAB53</color>
+    <color name="color_submit">#A8A8A8</color>
+
+
+    <color name="text_black">#333333</color>
+    <color name="text_gray">#898989</color>
+    <color name="bag_white">#fafafa</color>
+    <color name="text_org">#ffa626</color>
+    <color name="translate">#00000000</color>
+    <color name="color_underline">#efefef</color>
+    <color name="recy_bag_white">#55000000</color>
+    <color name="color_blue">#52BF3A</color>
+    <color name="color_blue_press">#429630</color>
+
+    <color name="color_name_gray">#BBBBBB</color>
+
+</resources>

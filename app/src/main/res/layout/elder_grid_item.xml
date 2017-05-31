@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="25dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_all_grid"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/elder_grid_item_sim"
+            fresco:placeholderImage="@mipmap/img_zwt_220"
+            fresco:placeholderImageScaleType="fitXY"
+            android:layout_width="110dp"
+            android:layout_height="110dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/elder_grid_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_black"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/elder_grid_item_bedname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/text_gray"
+                android:textSize="16sp" />
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/room_grid_item_nursename"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:textColor="@color/text_gray"-->
+                <!--android:textSize="14sp"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="总共"-->
+                    <!--android:textColor="@color/text_gray"-->
+                    <!--android:textSize="14sp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/room_grid_item_number"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="330"-->
+                    <!--android:textColor="@color/text_org"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="项任务未完成"-->
+                    <!--android:textColor="@color/text_gray"-->
+                    <!--android:textSize="14sp" />-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

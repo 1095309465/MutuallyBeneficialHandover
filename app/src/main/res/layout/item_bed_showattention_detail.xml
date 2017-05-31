@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><!--床头界面注意事项的弹出框-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_cancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="38dp"
+        android:text="注意事项"
+        android:textColor="#000000"
+        android:textSize="28sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:background="#969696" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/bed_attention_context_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/bed_detail_cancel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/close" />
+
+
+</RelativeLayout>

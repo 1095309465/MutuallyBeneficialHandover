@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/quickservice_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4B4A4A"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/bedSpeedBtn_image"
+            android:id="@+id/bed_btn_1"
+            android:src="@mipmap/pic_1"/>
+
+        <ImageView
+            style="@style/bedSpeedBtn_image"
+            android:id="@+id/bed_btn_2"
+            android:src="@mipmap/pic_2"/>
+
+        <ImageView
+            style="@style/bedSpeedBtn_image"
+            android:id="@+id/bed_btn_3"
+            android:src="@mipmap/pic_3"/>
+
+        <ImageView
+            style="@style/bedSpeedBtn_image"
+            android:id="@+id/bed_btn_4"
+            android:src="@mipmap/pic_4"/>
+
+        <ImageView
+            style="@style/bedSpeedBtn_image"
+            android:id="@+id/bed_btn_5"
+            android:src="@mipmap/pic_5"/>
+
+        <ImageView
+            style="@style/bedSpeedBtn_image"
+            android:id="@+id/bed_btn_6"
+            android:src="@mipmap/pic_6"/>
+
+        <ImageView
+            style="@style/bedSpeedBtn_image"
+            android:id="@+id/bed_btn_7"
+            android:src="@mipmap/pic_7"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp">
+
+        <TextView
+            style="@style/bedSpeedBtn_text"
+            android:text="换尿裤"/>
+
+        <TextView
+            style="@style/bedSpeedBtn_text"
+            android:text="倒尿壶"/>
+
+        <TextView
+            style="@style/bedSpeedBtn_text"
+            android:text="喂水"/>
+
+        <TextView
+            style="@style/bedSpeedBtn_text"
+            android:text="翻身"/>
+
+        <TextView
+            style="@style/bedSpeedBtn_text"
+            android:text="个人清洁"/>
+
+        <TextView
+            style="@style/bedSpeedBtn_text"
+            android:text="助卧/起床"/>
+
+        <TextView
+            style="@style/bedSpeedBtn_text"
+            android:text="特殊护理"/>
+    </LinearLayout>-->
+</LinearLayout>

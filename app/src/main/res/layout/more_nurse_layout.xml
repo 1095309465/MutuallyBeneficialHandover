@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_left_right_shape">
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="多人配合"
+            android:textColor="#202020"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="请扫描NFC设备"
+            android:textColor="#c8c8c8" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/tv_title"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+        <EditText
+            android:id="@+id/ed_nfc"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:singleLine="true"/>
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="30dp"
+            android:paddingLeft="30dp"
+
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:src="@mipmap/icon_close"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycle"
+        android:background="@drawable/nurse_item_selector"
+        android:text="确定"
+        android:textColor="#51b0fa"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

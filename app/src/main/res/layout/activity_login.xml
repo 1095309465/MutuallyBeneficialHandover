@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.jhzy.nursinghandover.ui.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@mipmap/logo"
+        android:scaleType="fitXY" />
+
+    <EditText
+        android:id="@+id/login_account"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_circle_frame"
+        android:drawableLeft="@mipmap/icon_login_account"
+        android:drawablePadding="10dp"
+        android:hint="账号"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="17sp"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_circle_frame"
+        android:drawableLeft="@mipmap/icon_login_password"
+        android:drawablePadding="10dp"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:textSize="17sp"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/login_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:background="@drawable/shape_circle_blue"
+        android:text="登录"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

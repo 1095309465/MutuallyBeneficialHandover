@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><!--快捷护理的布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:paddingTop="10dp">
+
+
+    <com.jhzy.nursinghandover.widget.ImageTxtView
+        android:id="@+id/img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        app:markIcon="@mipmap/icon_hnb"
+        app:text="换纸尿裤" />
+
+    <com.jhzy.nursinghandover.widget.ImageTxtView
+        android:id="@+id/img_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:markIcon="@mipmap/icon_dnh"
+        app:text="倒夜壶" />
+
+    <com.jhzy.nursinghandover.widget.ImageTxtView
+        android:id="@+id/img_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:markIcon="@mipmap/icon_ws"
+        app:text="喂水" />
+
+    <com.jhzy.nursinghandover.widget.ImageTxtView
+        android:id="@+id/img_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:markIcon="@mipmap/icon_fs"
+        app:text="翻身" />
+
+    <com.jhzy.nursinghandover.widget.ImageTxtView
+        android:id="@+id/img_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:markIcon="@mipmap/icon_qj"
+        app:text="个人清洁" />
+
+    <com.jhzy.nursinghandover.widget.ImageTxtView
+        android:id="@+id/img_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:markIcon="@mipmap/icon_xzqwc"
+        app:text="助卧床/起床" />
+
+    <com.jhzy.nursinghandover.widget.ImageTxtView
+        android:id="@+id/img_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:markIcon="@mipmap/icon_jj"
+        app:text="急救" />
+</LinearLayout>

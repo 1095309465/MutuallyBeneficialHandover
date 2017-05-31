@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginTop="27dp"
+        fresco:cardCornerRadius="5dp"
+        fresco:cardElevation="1dp">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/iv_refresh_bed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--屏保界面的主内容-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+                <!--老人的基本信息-->
+                <LinearLayout
+                    android:id="@+id/layout_1"
+                    android:layout_width="282dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="38dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <!--头像-->
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/screensaver_icon"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_marginTop="25dp"
+                        fresco:actualImageScaleType="fitXY"
+                        fresco:failureImage="@mipmap/img_zwt_220"
+                        fresco:placeholderImage="@mipmap/img_zwt_220"
+                        fresco:placeholderImageScaleType="fitXY" />
+                    <!--姓名-->
+                    <TextView
+                        android:id="@+id/screensaver_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text="姓名"
+                        android:textColor="#000000"
+                        android:textSize="21.33sp" />
+                    <!--年龄-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/screensaver_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="0岁"
+                            android:textColor="#4a4a4a"
+                            android:textSize="16.67sp" />
+
+                        <View
+                            android:layout_width="1.3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="7dp"
+                            android:background="#b7b7b7" />
+
+                        <TextView
+                            android:id="@+id/screensaver_bedno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="7dp"
+                            android:text="床位"
+                            android:textColor="#4a4a4a"
+                            android:textSize="16.67sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11.33dp"
+                        android:gravity="center">
+                        <!--护理等级-->
+                        <TextView
+                            android:id="@+id/screensaver_nursing_lv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="护理等级"
+                            android:textColor="#787878"
+                            android:textSize="17sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/nurse_lever_layout"
+                            android:layout_toRightOf="@id/screensaver_nursing_lv"
+                            android:layout_marginLeft="8.67dp"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"/>
+
+
+
+                        <!--两个以下疾病显示在这里-->
+                        <!--<LinearLayout
+                            android:id="@+id/bed_illness_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/screenSaver_nursing_lv"
+                            android:orientation="horizontal" />-->
+
+                    </RelativeLayout>
+                    <!--两个以上疾病显示在这里-->
+                    <!--<LinearLayout
+                        android:id="@+id/bed_illness_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" />-->
+                    <!--入住时间-->
+                    <TextView
+                        android:id="@+id/screensaver_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="37.33dp"
+                        android:background="@drawable/shape_bed_intime"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="6dp"
+                        android:text="暂无入住信息"
+                        android:textColor="#787878"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <!--注意事项 标题-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@id/layout_1"
+                    android:orientation="vertical">
+
+                    <!--注意事项标题-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="15dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/attention_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="注意事项"
+                            android:textColor="#000000"
+                            android:textSize="21.33sp" />
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/version"
+                            android:textSize="13sp"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                    <!--传说中的分割线-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.33dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#b0b0b0" />
+
+                    <!--滚动的注意事项-->
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="16.67dp"
+                        android:scrollbars="none">
+                        <!--注意事项-->
+                        <LinearLayout
+                            android:visibility="invisible"
+                            android:id="@+id/screensaver_notice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.jhzy.nursinghandover.widget.DotTextView
+                                android:id="@+id/screensaver_food_note"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                            <com.jhzy.nursinghandover.widget.DotTextView
+                                android:id="@+id/screensaver_special_note"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                            <com.jhzy.nursinghandover.widget.DotTextView
+                                android:id="@+id/screensaver_medical_note"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                            <com.jhzy.nursinghandover.widget.DotTextView
+                                android:id="@+id/screensaver_drug_note"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                            <com.jhzy.nursinghandover.widget.DotTextView
+                                android:id="@+id/screensaver_note_att"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                            <!--<include
+                                android:id="@+id/screenSaver_food_note"
+                                layout="@layout/item_screensaver_attention"
+                                android:visibility="gone"/>
+
+                            <include
+                                android:id="@+id/screenSaver_special_note"
+                                layout="@layout/item_screensaver_attention"
+                                android:visibility="gone"/>
+
+                            <include
+                                android:id="@+id/screenSaver_medical_note"
+                                layout="@layout/item_screensaver_attention"
+                                android:visibility="gone"/>
+
+                            <include
+                                android:id="@+id/screenSaver_drug_note"
+                                layout="@layout/item_screensaver_attention"
+                                android:visibility="gone"/>
+
+                            <include
+                                android:id="@+id/screenSaver_noteAtt"
+                                layout="@layout/item_screensaver_attention"
+                                android:visibility="gone"/>-->
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:text="有"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tv_number_nodone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:text="0"
+                            android:textColor="@color/red_btn_bg_color"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:text="项未完成任务"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>-->
+
+                    <!--<android.support.v7.widget.RecyclerView
+                        android:id="@+id/recy_nodoneitem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>-->
+
+                </LinearLayout>
+                <!--刷新按钮-->
+                <ImageView
+                    android:id="@+id/screenSaver_reflush_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp" />
+            </RelativeLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

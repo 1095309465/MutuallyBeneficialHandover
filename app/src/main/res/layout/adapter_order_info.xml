@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/img_bg_1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/head_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@mipmap/img_zwt_220"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:roundedCornerRadius="3dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/bed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="床位号"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/nurse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:minEms="7"
+            android:text="责任护工:nakisa" />
+    </LinearLayout>
+</RelativeLayout>

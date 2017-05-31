@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_search_right_top"
+        android:layout_width="match_parent"
+        android:layout_height="116dp">
+        <!-- 护理项目图标-->
+        <ImageView
+            android:id="@+id/iv_search_right_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"/>
+        <!-- 护理项目名称-->
+        <TextView
+            android:id="@+id/tv_search_right_itemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_search_right_icon"
+            android:textColor="#000000"
+            android:textSize="21sp"/>
+        <!-- 确认提交按钮-->
+        <TextView
+            android:id="@+id/tv_search_right_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_search_sanjiao"
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:layout_below="@id/rl_search_right_top"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 老人信息列表-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_search_right_elders"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:layout_weight="1"
+        android:layout_below="@id/iv_search_sanjiao"
+        android:layout_marginLeft="16dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"/>
+    <!-- 日常护理项目-->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        layout="@layout/item_bed_speedbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

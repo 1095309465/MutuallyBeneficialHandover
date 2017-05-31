@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><!--床头模块注意事项复用布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10dp">
+    <!--圆点-->
+    <TextView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_circle_oriange" />
+
+    <!--注意事项的内容-->
+    <TextView
+        android:id="@+id/attention_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:lineSpacingExtra="5dp"
+        android:ellipsize="end"
+        android:text="注意身体"
+        android:textColor="#4C4C4C"
+        android:textSize="14sp" />
+
+</LinearLayout>

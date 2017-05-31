@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <!-- a.OrganizationID, //机构ID
+    a.ZoneID,         //区域ID
+    b.ZoneValue,      //区域编码
+    a.ID,             //床位ＩＤ
+    c.RoomName,      //房间名
+    b.ZoneName,    //区域名,
+    b.ZoneTitle,    //区域标题,
+    a.BedName,      //
+    a.BedTitle,     //床位标题   用于床位展示-->
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="29dp"
+        android:src="@mipmap/img_bed" />
+
+    <RelativeLayout
+        android:id="@+id/layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/bind_layout_shape"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="区域名:"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/tv_zoneName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textColor="#333333" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="房间名:"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/tv_roomName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A301"
+                    android:textColor="#333333" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="床位名称:"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/tv_bedName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Root-a-003"
+                    android:textColor="#333333" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="床位标题:"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/tv_bedTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Root-a-003"
+                    android:textColor="#333333" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IEM:"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/tv_iem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_mark"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+        android:src="@mipmap/icon_bind_click" />
+
+
+</RelativeLayout>
